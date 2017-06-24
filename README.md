@@ -2,7 +2,7 @@
 -------------------------------------------------------
 # KC-Modulo-de-Git
 
-Ejercicio 1
+**EJERCICIO 1**
 
 Aclaración: se usan indistintamente las palabras "commit", acción y nodo.
 
