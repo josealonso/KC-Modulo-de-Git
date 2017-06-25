@@ -27,7 +27,7 @@ El argumento de "reset" no es un desplazamiento explícito del puntero, como en 
 **El merge del paso 13, ¿Causó algún conflicto? ¿Por qué?**
 
 13) Hacer un merge con ‘master’ (styled absorbe a master)
-
+```
 ```git merge master```
 Mensaje obtenido: ```Already up-to-date```
 
@@ -58,6 +58,7 @@ Si se da un nombre de fichero, da error:
 21) Desde “master”, hacer un merge con “styled”
 
 ```git checkout master```
+
 ```git merge styled```
 
 No hay conflicto, porque los nodos de las ramas forman una lista, al igual que en el punto 13.
@@ -67,6 +68,7 @@ No hay conflicto, porque los nodos de las ramas forman una lista, al igual que e
 25) Dibujar el diagrama
 
 ```git config alias.graph 'log --graph --decorate --pretty=oneline' ```
+
 ```git graph ```
 
 **El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?**
@@ -95,6 +97,7 @@ En general, la fusión "fast-forward" no es posible si el último nodo de la ram
 29) Eliminar la rama “title”
 
 ```git branch -d title```
+
     ```error: The branch 'title' is not fully merged.```
     ```If you are sure you want to delete it, run 'git branch -D title'```
 
@@ -107,6 +110,7 @@ Nos advierte de que al borrar la rama, dejaremos un nodo huérfano.
 Gracias al histórico de comandos de git ("reflog"), podemos recuperar el nodo que quitamos en el punto anterior.
 
 ```git reflog ---> c1d169e HEAD@{1}: merge title: Merge made by the 'recursive' strategy.```
+
 ```git reset --hard c1d169e```
 
 **¿Qué comando o comandos usaste en el paso 32?**
@@ -114,6 +118,7 @@ Gracias al histórico de comandos de git ("reflog"), podemos recuperar el nodo q
 32) Volver al commit inicial cuando se creó el poema
 
 ```git reflog ---> 23e419a HEAD@{27}: commit: Creado el archivo git-nuestro.md```
+
 ```git reset --hard 23e419a ```
 
 **¿Qué comando o comandos usaste en el punto 33?**
@@ -121,5 +126,6 @@ Gracias al histórico de comandos de git ("reflog"), podemos recuperar el nodo q
 33) Volver al estado final, cuando pusimos título al poema
 
 ```git reflog ---> 23e419a HEAD@{27}: commit: Creado el archivo git-nuestro.md```
+
 ```git reset --hard 23e419a ```
 
