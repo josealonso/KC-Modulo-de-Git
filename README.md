@@ -42,6 +42,7 @@ Este comando no borra ninguna rama ni crea ningún nodo. No hay conflicto, ya qu
 19) Hacer un merge de “htmlify” en “styled” (styled absorbe a htmlify)
 
 ```git checkout styled```
+
 ```git merge htmlify```
 ---> ```CONFLICT (content): Merge conflict in git-nuestro.md
 Automatic merge failed; fix conflicts and then commit the result.```
@@ -52,7 +53,8 @@ Sí hay conflictos, porque el mismo fichero tiene contenidos diferentes. En la r
 
 Editamos el fichero y resolvemos el conflicto.
 
-```git add git-nuestro.md``` y ```git commit -m "Fichero modificado para resolver los conflictos del paso 19"```
+```git add git-nuestro.md``` y 
+```git commit -m "Fichero modificado para resolver los conflictos del paso 19"```
 
 Si se da un nombre de fichero, da error:
 ```fatal: cannot do a partial commit during a merge```
