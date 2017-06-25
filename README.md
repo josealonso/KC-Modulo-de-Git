@@ -18,7 +18,9 @@ El comando "reset" mueve el puntero HEAD a donde indica el argumento; en este ca
 
 12) Rehacer el último commit (el que acabamos de deshacer)
 
-```git reflog``` y se busca el id correspondiente al commit del paso 10 ---> ```a83298a HEAD@{2}: commit: Fichero modificado```
+```git reflog``` y se busca el id correspondiente al commit del paso 10 ---> 
+
+```a83298a HEAD@{2}: commit: Fichero modificado```
 
 ```git reset --hard a83298a```
 
@@ -27,9 +29,11 @@ El argumento de "reset" no es un desplazamiento explícito del puntero, como en 
 **El merge del paso 13, ¿Causó algún conflicto? ¿Por qué?**
 
 13) Hacer un merge con ‘master’ (styled absorbe a master)
-```
+
 ```git merge master```
-Mensaje obtenido: ```Already up-to-date```
+
+Mensaje obtenido: 
+```Already up-to-date```
 
 Este comando no borra ninguna rama ni crea ningún nodo. No hay conflicto, ya que los nodos de la rama "master" forman parte de la rama "styled". Las dos ramas forman una lista, no hay ninguna ramificación, por tanto las ramas no se pueden fusionar.
 
