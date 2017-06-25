@@ -53,7 +53,8 @@ Sí hay conflictos, porque el mismo fichero tiene contenidos diferentes. En la r
 
 Editamos el fichero y resolvemos el conflicto.
 
-```git add git-nuestro.md``` y 
+```git add git-nuestro.md```
+
 ```git commit -m "Fichero modificado para resolver los conflictos del paso 19"```
 
 Si se da un nombre de fichero, da error:
@@ -104,8 +105,8 @@ En general, la fusión "fast-forward" no es posible si el último nodo de la ram
 
 ```git branch -d title```
 
-    ```error: The branch 'title' is not fully merged.```
-    ```If you are sure you want to delete it, run 'git branch -D title'```
+```error: The branch 'title' is not fully merged.```
+```If you are sure you want to delete it, run 'git branch -D title'```
 
 Nos advierte de que al borrar la rama, dejaremos un nodo huérfano.
 
