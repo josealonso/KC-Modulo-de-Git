@@ -10,7 +10,7 @@ Aclaración: se usan indistintamente las palabras "commit", acción y nodo.
 
 11) Deshacer el último commit (perdiendo los cambios realizados en el working copy)
 
-git reset --hard HEAD~1
+```git reset --hard HEAD~1```
 
 El comando "reset" mueve el puntero HEAD a donde indica el argumento; en este caso, HEAD~1 significa la penúltima acción, nodo o "commit". El modificador "--hard" indica que se altera también el espacio de trabajo.
 
