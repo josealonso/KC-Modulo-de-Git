@@ -105,8 +105,7 @@ En general, la fusión "fast-forward" no es posible si el último nodo de la ram
 
 ```git branch -d title```
 
-```error: The branch 'title' is not fully merged.```
-```If you are sure you want to delete it, run 'git branch -D title'```
+```error: The branch 'title' is not fully merged. If you are sure you want to delete it, run 'git branch -D title'```
 
 Nos advierte de que al borrar la rama, dejaremos un nodo huérfano.
 
